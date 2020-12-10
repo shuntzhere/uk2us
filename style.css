@@ -15,6 +15,7 @@
 body{
     font-family: 'Nunito', sans-serif;
     color: #091114;
+    font-weight: 300;
 }
 
 nav{
@@ -52,6 +53,7 @@ button{
     font-family: cursive;
     font-size: large;
     color: white;
+    font-weight: 300;
 }
 
 #translate-button:hover{
