@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
 
 *{
     box-sizing: border-box;
@@ -7,13 +7,13 @@
 }
 
 :root{
-    --primary: #F0544F;
+    --primary:#1abc9c;
     --black: #091114;
     --width-break:600px;
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Nunito', sans-serif;
     color: #091114;
 }
 
@@ -28,10 +28,16 @@ main{
     max-width: var(--width-break);
 }
 
+.header{
+    text-transform: uppercase;
+    color: white;
+}
+
 textarea{
     box-sizing: border-box;
     display: block;
     width: 100%;
+    padding: 2rem;
     min-height: 20vh;
     margin-top: 2rem;
     font-size: large;
@@ -45,6 +51,22 @@ button{
     padding: 1rem 2rem;
     font-family: cursive;
     font-size: large;
+    color: white;
+}
+
+#translate-button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0,0.05);
+}
+
+#translate-button{
+    transition: all .2s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0,0.15);
+    font-family: 'Nunito', sans-serif;
+}
+
+.text-converter{
+    font-size: 25px;
 }
 
 #translate-output {
@@ -54,18 +76,31 @@ button{
     max-height: 20vh;
     overflow: scroll;
     border: 1px solid var(--black);
+    min-height: 20vh;
 }
 
 footer{
     position: fixed;
-    width: 100%;
     bottom: 0;
-    padding: 1rem;
-    background-color: var(--primary);
+    width: 100%;
     text-align: center;
 }
 
+.main{
+    position: relative;
+    height: 600px;
+}
+
+.about{
+    font-size: 30px;
+    bottom: 10px;
+    text-align: center;
+    background-color: white;
+}
+
 footer p {
-    max-width: var(--width-break);
-    margin: auto;
+    color: white;
+    background-color: var(--primary);
+    width: 100%;
+    padding: 1rem;
 }
