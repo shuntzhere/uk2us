@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary: #F0544F;
+    --black: #091114;
+    --width-break:600px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: #091114;
+}
+
+nav{
+    background-color: var(--primary);
+    text-align: center;
+}
+
+main{
+    margin: auto;
+    padding: 3rem;
+    max-width: var(--width-break);
+}
+
+textarea{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+}
+
+button{
+    background-color: var(--primary);
+    border: 1px;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-family: cursive;
+    font-size: large;
+}
+
+#translate-output {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    overflow: scroll;
+    border: 1px solid var(--black);
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+footer p {
+    max-width: var(--width-break);
+    margin: auto;
+}
